@@ -2,8 +2,6 @@ function birthstones (text: string) {
     for (let Month = 0; Month <= monthList.length - 1; Month++) {
         if (monthList[Month] == text) {
             game.splash(birthstoneList[Month])
-        } else {
-            game.splash("Error. Try Again")
         }
     }
 }
@@ -11,8 +9,6 @@ function flowers (text: string) {
     for (let Month = 0; Month <= monthList.length - 1; Month++) {
         if (monthList[Month] == text) {
             game.splash(flowerList[Month])
-        } else {
-            game.splash("Error. Try Again")
         }
     }
 }
@@ -62,8 +58,8 @@ flowerList = [
 "Holly"
 ]
 game.splash("Birthstone or Flower?")
-let Answer = game.askForNumber("Birthstone (1) or Flower (2)", 1)
 let Month = game.askForString("What month were you born in?", 9)
+let Answer = game.askForNumber("Birthstone (1) or Flower (2)", 1)
 if (Answer == 1) {
     birthstones(Month)
 } else if (Answer == 2) {
