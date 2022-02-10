@@ -62,8 +62,8 @@ flowerList = [
 "Holly"
 ]
 game.splash("Birthstone or Flower?")
-let Month = game.askForString("What month were you born in?", 9)
 let Answer = game.askForNumber("Birthstone (1) or Flower (2)", 1)
+let Month = game.askForString("What month were you born in?", 9)
 if (Answer == 1) {
     birthstones(Month)
 } else if (Answer == 2) {
