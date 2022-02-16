@@ -1,5 +1,5 @@
 {
-    "name": "Create Task",
+    "name": "Create Task-Ezra",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -9,13 +9,15 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "main.py"
+        "main.py",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.8.17",
+        "target": "1.8.20",
         "targetId": "arcade"
     },
     "supportedTargets": [
