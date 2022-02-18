@@ -266,6 +266,7 @@ scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     `)
+// This stores the different answers the users can give
 monthList = [
 "january",
 "february",
@@ -280,6 +281,7 @@ monthList = [
 "november",
 "december"
 ]
+// This stores the output for birthstones
 birthstoneList = [
 "Garnet",
 "Amethyst",
@@ -294,6 +296,7 @@ birthstoneList = [
 "Topaz",
 "Turquoise"
 ]
+// This stores the output for the birth flowers
 flowerList = [
 "Snowdrop",
 "Violet",
@@ -308,7 +311,9 @@ flowerList = [
 "Chrysanthemum",
 "Holly"
 ]
+// This is the first text displayed to the user and asks for input
 game.splash("Birthstone or Flower?")
+// Sets variable for input from which output the user wants
 let number = game.askForNumber("Birthstone (1) or Flower (2)", 1)
 if (number == 1) {
     Month = game.askForString("What month were you born in?", 9)
